@@ -20,5 +20,10 @@ int main()
 
     int firstNumber(60), secondNumber(40);
     cout << firstNumber + secondNumber << endl; 
+    cout << "le premier est : " << firstNumber << " et le second : " << secondNumber << endl;
+
+    int& copyNumber(number);
+    cout << copyNumber << endl;
+
     return 0;
 }
