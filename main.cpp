@@ -8,6 +8,8 @@ int main()
     cout << "test avec les \'guillemets\' " << endl;
     cout << "un autre test \\/O\\/ " << endl;
 
+// test with variables
+
     string phrase("that's working");
     cout << phrase << endl;
 
@@ -24,6 +26,15 @@ int main()
 
     int& copyNumber(number);
     cout << copyNumber << endl;
+
+// test with cout && cin
+
+    cout << "How old are you ?" << endl;
+    int ageUser(0);
+
+    cin >> ageUser;
+
+    cout << "You have " << ageUser <<  " years old " << endl;
 
     return 0;
 }
