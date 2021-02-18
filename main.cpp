@@ -36,5 +36,23 @@ int main()
 
     cout << "You have " << ageUser <<  " years old " << endl;
 
+// part 2 cout && cin
+
+    cout << "Quel est votre prénom ? " << endl;
+
+    string nameUser("No name");
+
+    cin >> nameUser;
+
+    cin.ignore();
+
+    cout << "Quel est votre âge ? " << endl;
+
+    int age(0);
+
+    cin >> age;
+
+    cout << "Votre prénom c'est : " << nameUser << " et vous avez : " << age << " ans" << endl;
+
     return 0;
 }
