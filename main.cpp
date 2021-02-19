@@ -54,8 +54,6 @@ int main()
 
     cout << "Votre prénom c'est : " << nameUser << " et vous avez : " << age << " ans" << endl;
 
-*/
-
 // Change the content of a variable
 
     int myFirstNumber(1);
@@ -77,6 +75,16 @@ int main()
     result = c + d;
 
     cout << result << endl; // 4
+
+    */
+
+   // constante
+
+   double const pi(3.1415);
+
+   string const pass("pass");
+
+   cout << pi << pass << endl;
 
     return 0;
 }
