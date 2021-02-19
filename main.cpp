@@ -78,7 +78,7 @@ int main()
 
     
 
-   // constante
+// constante
 
    double const pi(3.1415);
 
@@ -86,9 +86,7 @@ int main()
 
    cout << pi << pass << endl;
 
-*/
-
-    // first exercices 
+// first exercices 
 
     double firstCalc(0),secondCalc(0), calcResult(0);
 
@@ -104,6 +102,26 @@ int main()
 
     cout << firstCalc << " + " << secondCalc << " est égal à " << calcResult << endl;
 
+*/
 
+// Increment && decrement
+
+    int incrementation(1);
+
+    incrementation++;
+
+    cout << incrementation << endl;
+
+    int decrementation(5);
+
+    decrementation--;
+
+    cout << decrementation << endl;
+
+    int maxLife(5);
+
+    maxLife += 5;
+
+    cout << maxLife << endl;
     return 0;
 }
