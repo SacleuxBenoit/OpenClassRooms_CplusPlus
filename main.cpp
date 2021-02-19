@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World" << endl << "this is a test" << endl;
+/*    cout << "Hello World" << endl << "this is a test" << endl;
     cout << "test avec les \'guillemets\' " << endl;
     cout << "un autre test \\/O\\/ " << endl;
 
@@ -53,6 +53,30 @@ int main()
     cin >> age;
 
     cout << "Votre prénom c'est : " << nameUser << " et vous avez : " << age << " ans" << endl;
+
+*/
+
+// Change the content of a variable
+
+    int myFirstNumber(1);
+
+    myFirstNumber = 5;
+
+    cout << myFirstNumber << endl ; // 5
+
+    int a(1),b(2);
+
+    cout << a << b << endl; // 12
+
+    a = b;
+
+    cout << a << b << endl; // 22
+
+    int c(2),d(2),result(0);
+
+    result = c + d;
+
+    cout << result << endl; // 4
 
     return 0;
 }
