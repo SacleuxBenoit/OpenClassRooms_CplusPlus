@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cmath>
+
 using namespace std;
 
 int main()
@@ -102,8 +104,6 @@ int main()
 
     cout << firstCalc << " + " << secondCalc << " est égal à " << calcResult << endl;
 
-*/
-
 // Increment && decrement
 
     int incrementation(1);
@@ -123,5 +123,42 @@ int main()
     maxLife += 5;
 
     cout << maxLife << endl;
+
+    */
+
+   // cmath
+
+   double racineSquare(25),result(0);
+
+    result = sqrt(racineSquare);
+
+    cout << result << endl;
+
+    double cubicRoot(25),secondResult(0);
+
+    secondResult = cbrt(cubicRoot);
+
+    cout << secondResult << endl;
+
+    double a(2),b(5),thirdResult(0);
+
+    thirdResult = pow(a,b);
+
+    cout << thirdResult << endl;
+
+    double c(0),d(0),lastResult(0);
+
+    cout << "Veuillez entrer la valeur de (c) " << endl;
+
+    cin >> c;
+
+    cout << "Et maintenant la valeur de (d) " << endl;
+
+    cin >> d;
+
+    lastResult = pow(c,d);
+
+    cout << "Le résultat est : " << lastResult << endl;
+
     return 0;
 }
