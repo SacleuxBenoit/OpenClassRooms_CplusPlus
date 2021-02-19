@@ -76,7 +76,7 @@ int main()
 
     cout << result << endl; // 4
 
-    */
+    
 
    // constante
 
@@ -85,6 +85,25 @@ int main()
    string const pass("pass");
 
    cout << pi << pass << endl;
+
+*/
+
+    // first exercices 
+
+    double firstCalc(0),secondCalc(0), calcResult(0);
+
+    cout << "Entre le premier numéro : " << endl;
+
+    cin >> firstCalc;
+
+    cout << "Et maintenant le deuxième : " << endl;
+
+    cin >> secondCalc;
+
+    calcResult = firstCalc + secondCalc;
+
+    cout << firstCalc << " + " << secondCalc << " est égal à " << calcResult << endl;
+
 
     return 0;
 }
