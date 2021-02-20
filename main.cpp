@@ -124,11 +124,9 @@ int main()
 
     cout << maxLife << endl;
 
-    */
+// cmath
 
-   // cmath
-
-   double racineSquare(25),result(0);
+    double racineSquare(25),result(0);
 
     result = sqrt(racineSquare);
 
@@ -160,5 +158,26 @@ int main()
 
     cout << "Le résultat est : " << lastResult << endl;
 
+   */
+
+// loop
+
+    int age(17);
+
+    while(age <= 18){
+        cout << "quel âge avez vous ?" << endl;
+
+        cin >> age;
+    }
+
+    do{
+        cout << "Ce n'est pas bon !" << endl;
+        age++;
+    }
+    while(age <=18);
+
+    for(int seconds(0); seconds < 60; seconds++){
+        cout << seconds << endl;
+    }
     return 0;
 }
