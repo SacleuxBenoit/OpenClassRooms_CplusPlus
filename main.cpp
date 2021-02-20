@@ -4,6 +4,32 @@
 
 using namespace std;
 
+// function
+
+int addTwo(int numberReceive){
+
+    int valeur(numberReceive +=2);
+
+    return valeur;
+}
+
+int calcAddition(int a, int b){
+    return a + b;
+}
+
+double multiplication(int firstNumber, int secondNumber){
+    return firstNumber * secondNumber;
+}
+
+void sayHi(){
+    cout << "Hello you !" << endl;
+}
+
+double square(double x){
+double result = x*x;
+return result;
+}
+
 int main()
 {
 /*    cout << "Hello World" << endl << "this is a test" << endl;
@@ -158,8 +184,6 @@ int main()
 
     cout << "Le résultat est : " << lastResult << endl;
 
-   */
-
 // loop
 
     int age(17);
@@ -178,6 +202,25 @@ int main()
 
     for(int seconds(0); seconds < 60; seconds++){
         cout << seconds << endl;
+    }
+   */
+
+  // function bis
+
+    int a(8);
+
+    cout << addTwo(a) << endl;
+
+    cout << calcAddition(5,2) << endl;
+
+    cout << multiplication(2,5) << endl;
+
+    sayHi();
+
+    cout << square(5) << endl;
+
+    for(int i(0); i < 20; i++){
+        cout << square(i) << endl;
     }
     return 0;
 }
