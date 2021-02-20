@@ -30,6 +30,21 @@ double result = x*x;
 return result;
 }
 
+void rectangle(int l,int h){
+
+    if(l < 0 || h < 0){
+        cout << "Erreur";
+    }else{
+        for(int ligne(0); ligne < h; ligne++){
+            for(int column(0); column < l; column++){
+                cout << "-";
+            }
+            cout << endl;
+        }
+    }
+
+}
+
 int main()
 {
 /*    cout << "Hello World" << endl << "this is a test" << endl;
@@ -203,7 +218,7 @@ int main()
     for(int seconds(0); seconds < 60; seconds++){
         cout << seconds << endl;
     }
-   */
+  
 
   // function bis
 
@@ -222,5 +237,8 @@ int main()
     for(int i(0); i < 20; i++){
         cout << square(i) << endl;
     }
+ */
+        rectangle(10,3);
+
     return 0;
 }
