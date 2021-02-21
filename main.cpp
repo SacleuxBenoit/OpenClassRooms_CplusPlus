@@ -45,6 +45,14 @@ void rectangle(int l,int h){
 
 }
 
+// passage par référence
+
+void trade(double& a, double& b){
+    double temporaire(a);
+    a = b;
+    b = temporaire;
+}
+
 int main()
 {
 /*    cout << "Hello World" << endl << "this is a test" << endl;
@@ -237,8 +245,18 @@ int main()
     for(int i(0); i < 20; i++){
         cout << square(i) << endl;
     }
- */
+ 
         rectangle(10,3);
+*/
 
+//  passage par référence 
+
+    double a(2),b(5);
+
+    cout << a << " "  << b << endl;
+
+    trade(a,b);
+
+    cout << a << " " << b << endl;
     return 0;
 }
