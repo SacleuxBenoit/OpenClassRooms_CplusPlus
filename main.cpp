@@ -1,4 +1,5 @@
 #include <iostream>
+#include "math.h"
 #include <string>
 #include <cmath>
 
@@ -247,7 +248,6 @@ int main()
     }
  
         rectangle(10,3);
-*/
 
 //  passage par référence 
 
@@ -259,4 +259,18 @@ int main()
 
     cout << a << " " << b << endl;
     return 0;
+
+*/
+
+    int a(5),b(0);
+
+    cout << "La valeur de a est de : " << a << endl;
+    cout << "La valeur de a est de : " << b << endl;
+
+
+    b = addTwo(a);
+
+    cout << "la valeur de a : " << a << endl;
+    cout << "La valeur de a est de : " << b << endl;
+
 }
