@@ -2,10 +2,10 @@
 
 using namespace std;
 
-int nombreDeSecondes(int heures, int minutes, int secondes);
+int nombreDeSecondes(int heures, int minutes = 0, int secondes = 0);
 
 int main(){
-    cout << nombreDeSecondes(1,10,25) << endl;
+    cout << nombreDeSecondes(8) << endl;
 
     return 0;
 }
