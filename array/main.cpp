@@ -4,7 +4,7 @@
 using namespace std;
 
 int main(){
-
+/*
     // Static array
 
 // wrong way
@@ -42,6 +42,28 @@ int main(){
     for(int i =0 ; i < nombreMeilleursScores;i++){
         cout << meilleurScore[i] << endl;
     }
+*/
+// calculate the average of something
+
+    int const nombresNotes(6);
+    double notes[nombresNotes];
+
+    notes[0] = 15.5;
+    notes[1] = 12.1;
+    notes[2] = 6;
+    notes[3] = 1;
+    notes[4] = 20;
+    notes[5] = 18.2;
+
+    double average(0);
+
+    for(int i = 0; i < nombresNotes; i++){
+        average += notes[i];
+    }
+
+    double result(average /= nombresNotes);
+
+    cout << "La moyenne est de " << result << endl;
 
     return 0;
 }
