@@ -5,6 +5,8 @@ using namespace std;
 
 int main(){
 
+    // Static array
+
 // wrong way
 
     string nomMeilleurjoueur1("totor");
@@ -24,6 +26,22 @@ int main(){
     cout << "3) " << nomMeilleurjoueur3 << " " << MeilleurScore3 << endl;
     cout << "4) " << nomMeilleurjoueur4 << " " << MeilleurScore4 << endl;
     cout << "5) " << nomMeilleurjoueur5 << " " << MeilleurScore5 << endl;
+
+// good way
+
+    int const nombreMeilleursScores(5);
+
+    int meilleurScore[nombreMeilleursScores];
+
+    meilleurScore[0] = 1000000;
+    meilleurScore[1] = 100000;
+    meilleurScore[2] = 10000;
+    meilleurScore[3] = 1000;
+    meilleurScore[4] = 100;
+
+    for(int i =0 ; i < nombreMeilleursScores;i++){
+        cout << meilleurScore[i] << endl;
+    }
 
     return 0;
 }
