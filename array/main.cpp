@@ -83,7 +83,6 @@ int main(){
     meilleurScore[2] = 10000;
     meilleurScore[3] = 1000;
     meilleurScore[4] = 100;
-*/
 
 // push back
 
@@ -95,6 +94,23 @@ int main(){
 
     cout << num[3] << endl;
 
+*/
+
+// pop back && size()
+
+    vector<int> deleteLastIndex(3,3);
+
+    cout << deleteLastIndex[2] << endl;
+
+    deleteLastIndex.pop_back();
+    deleteLastIndex.pop_back();
+
+
+    cout << deleteLastIndex[2] << endl;
+
+    int const taille(deleteLastIndex.size());
+
+    cout << taille << endl;
 
     return 0;
 }
