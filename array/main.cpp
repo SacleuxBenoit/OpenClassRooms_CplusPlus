@@ -94,8 +94,6 @@ int main(){
 
     cout << num[3] << endl;
 
-*/
-
 // pop back && size()
 
     vector<int> deleteLastIndex(3,3);
@@ -111,6 +109,30 @@ int main(){
     int const taille(deleteLastIndex.size());
 
     cout << taille << endl;
+
+*/
+// calculate the average of something 2.0
+
+    vector<double> notes;
+
+    notes.push_back(15.5);
+    notes.push_back(12.1);
+    notes.push_back(6);
+    notes.push_back(1);
+    notes.push_back(20);
+    notes.push_back(18.2);
+
+    cout << notes[2] << endl;
+    double average(0);
+
+    for(int i = 0; i < notes.size(); i++){
+        average += notes[i];
+    }
+
+    average /= notes.size();
+
+    cout << "La moyenne est de : " << average << endl;
+
 
     return 0;
 }
