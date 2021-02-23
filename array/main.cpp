@@ -72,7 +72,7 @@ int main(){
 
     cout << listeName[9] << endl;
 
-*/
+
 
     int const nombreMeilleursScores(5);
 
@@ -83,6 +83,17 @@ int main(){
     meilleurScore[2] = 10000;
     meilleurScore[3] = 1000;
     meilleurScore[4] = 100;
+*/
+
+// push back
+
+    vector<int> num(3,2);
+
+    cout << num[2] << endl;
+
+    num.push_back(7);
+
+    cout << num[3] << endl;
 
 
     return 0;
