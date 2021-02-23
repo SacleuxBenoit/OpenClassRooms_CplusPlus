@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -42,7 +43,7 @@ int main(){
     for(int i =0 ; i < nombreMeilleursScores;i++){
         cout << meilleurScore[i] << endl;
     }
-*/
+
 // calculate the average of something
 
     int const nombresNotes(6);
@@ -64,6 +65,25 @@ int main(){
     double result(average /= nombresNotes);
 
     cout << "La moyenne est de " << result << endl;
+
+// Dynamic array
+
+    vector<string> listeName(10,"No name");
+
+    cout << listeName[9] << endl;
+
+*/
+
+    int const nombreMeilleursScores(5);
+
+    vector<int> meilleurScore(nombreMeilleursScores);
+
+    meilleurScore[0] = 1000000;
+    meilleurScore[1] = 100000;
+    meilleurScore[2] = 10000;
+    meilleurScore[3] = 1000;
+    meilleurScore[4] = 100;
+
 
     return 0;
 }
