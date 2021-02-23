@@ -4,6 +4,12 @@
 
 using namespace std;
 
+// function with array in argument
+
+    void doSomething(vector<int> const& a){
+        cout << a.size() << endl;
+    }
+
 int main(){
 /*
     // Static array
@@ -133,6 +139,9 @@ int main(){
 
     cout << "La moyenne est de : " << average << endl;
 
+// function with array in argument
 
+    vector<int> myFirstArray(3,2);
+    doSomething(myFirstArray);
     return 0;
 }
